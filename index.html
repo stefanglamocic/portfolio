@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefan Glamočić</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-content container">
+            <div>Stefan Glamočić</div>
+            <ul class="header-links">
+                <a href="#first-proj">Projekti</a>
+                <a href="#about">O meni</a>
+            </ul>
+        </div>
+    </header>
+
+    <main id="first-proj" class="container">
+        <div>
+            <div class="video-container">
+                <h1 class="project-title">Web 3D studio</h1>
+                <video autoplay loop muted playsinline preload="auto">
+                    <source src="res/demo.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="description">
+                Međuplatformski 3D renderer koji se izvršava na bilo kojem aktuelnom veb pregledaču.
+                Korisnik je u mogućnosti da dodaje 3D modele u vidu ".obj" fajlova i da nad njima vrši razne
+                transformacije
+                poput translacije, rotacije i skaliranja. Takođe je moguće dodavati teksture na dodate objekte, brisati
+                ih, kao i
+                mijenjati smijer vektora svjetlosti.
+                Aplikacija je napisana u TypeScript programskom jeziku, u potpunosti se izvršava na klijentskoj
+                mašini, a grafičkom hardveru se pristupa preko WebGL 2 API-ja.
+                <a class="project-link" href="https://github.com/stefanglamocic/w3ds" target="_blank">Github</a>
+            </div>
+        </div>
+
+        <div>
+            <div class="slideshow">
+                <h1 class="project-title">Forum</h1>
+                <img src="res/forum1.png">
+                <img src="res/forum2.png">
+                <img src="res/forum3.png">
+            </div>
+
+            <div class="description">
+                Forum je veb aplikacija koja omogućava prijavljenim korisnicima da diskutuju o raznim
+                temama. Postoje tri tipa korisnika: obični, moderator i administrator. Moderator, pored mogućnosti
+                da ostavlja komentare (kao i obični korisnik), može da kontroliše ko od korisnika može da komentariše
+                na kojoj temi, mijenja i briše komentare. Administrator, pored privilegija koje ima moderator,
+                može da kontroliše tip svakog korisnika. Ova veb aplikacija ima klasičnu arhitekturu koja dijeli
+                odgovornosti
+                na front i bekend, gdje je front napisan uz pomoc Angular frejmvorka, a bekend čine Spring Boot sa MySQL
+                relacionom bazom.
+                Poseban akcenat je stavljen na sigurnost, koja je implementirana pomoću Spring Security-a.
+                <a class="project-link" href="https://github.com/stefanglamocic/forum" target="_blank">Github</a>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="gallery">
+                <h1 class="project-title">Assets Inventory</h1>
+                <img src="res/mob1.jpg">
+                <img src="res/mob2.jpg">
+                <img src="res/mob3.jpg">
+                <img src="res/mob4.jpg">
+            </div>
+
+            <div class="description">
+                Mobilna aplikacija koja omogućava korisniku da unosi osnovna sredstva sa
+                podacima poput lokacije (koja se dodaje pomoću Google mape), naziva, opisa, cijene,
+                bar koda (koji je moguće unijeti ručno ili skeniranjem). Za ova sredstva su zaduženi zaposleni u
+                popisnim listama,
+                koje dodajemo putem aplikacije. Nad svim entitetima u aplikaciji su omogućene CRUD operacije, pri čemu
+                podatke
+                možemo pretraživati i čuvaju se u lokalnoj SQLite bazi podataka.
+                <a href="https://github.com/stefanglamocic/assets-inv" class="project-link" target="_blank">
+                    Github
+                </a>
+            </div>
+        </div>
+
+
+        <div id="about" class="about">
+            <div class="base">
+                <img src="res/ir.jpg">
+                <div class="base-info">
+                    <div class="base-title">Stefan Glamočić</div>
+                    <div class="base-subtitle">Diplomirani inženjer elektrotehnike</div>
+                </div>
+            </div>
+            <div class="about-desc">
+                Kroz studije na Elektrotehničkom fakultetu u Banjoj Luci sam radio
+                na mnoštvu različitih projekata, od raznih desktop, mobilnih, pa do veb aplikacija.
+                Projekti su podrazumijevali kako individualan, tako i grupni rad, kroz fakultetske obaveze i razne stručne prakse.
+                Stručne prakse su mi pružile priliku da radim u profesionalnom okruženju i da unaprijedim svoje vještine kroz rad sa mentorima.
+                Voljan sam da se konstantno usavršavam i učim nove tehnologije, a trenutno me najviše zanima oblast 3D grafike i razvoj interaktivnih vizuelnih sistema.
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
